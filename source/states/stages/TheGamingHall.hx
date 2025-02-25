@@ -109,19 +109,9 @@ class TheGamingHall extends BaseStage
 			frontGaming.setGraphicSize(Std.int(frontGaming.width * 1.5));
 			add(frontGaming);
 
-                if (SONG.song.toLowerCase() == 'jovial')
-                {
-			frontGaming.color = FlxColor.PURPLE;
-			behindGaming.color = 0xFF823C25;
-			boyfriendGroup.color = FlxColor.PURPLE;
-			gfGroup.color = FlxColor.PURPLE;
-			dadGroup.color = FlxColor.PURPLE;
-        	}
                 if (SONG.song.toLowerCase() == 'merriment' || SONG.song.toLowerCase() == 'games' || SONG.song.toLowerCase() == 'jovial')
                 {
 			entityBFMonster();
-			vignette.setGraphicSize(Std.int(hearts.width * 2.15));
-			vignette.color = FlxColor.PINK;
 			if (bfEntity.x <= jumpDis)
 			{
 				JSActive = true;
